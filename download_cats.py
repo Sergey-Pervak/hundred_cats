@@ -28,7 +28,7 @@ def download_new_cat_image():
     download_file(url)
 
 
-def create_dir(dir_name): 
+def create_dir(dir_name):
     os.makedirs(dir_name, exist_ok=True)
 
 
@@ -46,8 +46,8 @@ def main():
 
 
 if __name__ == '__main__':
-    start_time = datetime.now()
+    # start_time = datetime.now()
     main()
-    end_time = datetime.now()
-    print(f'Время выполнения программы: {end_time - start_time}.')
+    # end_time = datetime.now()
+    # print(f'Время выполнения программы: {end_time - start_time}.')
     list_dir(CATS_DIR)
