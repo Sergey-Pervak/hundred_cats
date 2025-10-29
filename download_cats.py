@@ -6,7 +6,7 @@ import requests
 
 BASE_DIR = Path(__file__).parent
 URL = 'https://api.thecatapi.com/v1/images/search'
-CATS_DIR = CATS_DIR = BASE_DIR / 'cats'
+CATS_DIR = BASE_DIR / 'cats'
 
 
 def get_new_image_url():
@@ -46,8 +46,8 @@ def main():
 
 
 if __name__ == '__main__':
-    # start_time = datetime.now()
+    start_time = datetime.now()
     main()
-    # end_time = datetime.now()
-    # print(f'Время выполнения программы: {end_time - start_time}.')
+    end_time = datetime.now()
+    print(f'Время выполнения программы: {end_time - start_time}.')
     list_dir(CATS_DIR)
